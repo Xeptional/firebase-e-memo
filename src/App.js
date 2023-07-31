@@ -1,24 +1,42 @@
-import logo from './logo.svg';
+import { ChakraProvider } from '@chakra-ui/react';
+// import { ChakraTheme } from '@chakra-ui/react';
+import { Auth, Arrivals } from './components/';
+
 import './App.css';
+
+// const { Button } = ChakraTheme.components;
+
+const colors = {
+  transparent: 'transparent',
+  white: '#f8f5fa',
+  black: '#02456B',
+  grey: {
+    100: '#C5C4C4',
+    50: 'rgba(0, 0, 0, 0.06)'
+  }, 
+  blue: {
+    100: '#02456B',
+    50: '#2F80ED'
+  },
+}
+
+// const fonts = {
+//   heading: 
+// };
+
+
+// const theme = extendBaseTheme({
+//   colors,
+//   // components: {
+//   //   Button,
+//   // }
+// })
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ChakraProvider>
+      <Auth />
+    </ChakraProvider>
   );
 }
 
