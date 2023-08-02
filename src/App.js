@@ -1,6 +1,6 @@
 import { ChakraProvider } from '@chakra-ui/react';
 // import { ChakraTheme } from '@chakra-ui/react';
-import { Auth, Arrivals } from './components/';
+import { Auth, Arrivals, AddNew } from './components/';
 
 import './App.css';
 
@@ -35,7 +35,7 @@ const colors = {
 function App() {
   return (
     <ChakraProvider>
-      <Auth />
+      <AddNew />
     </ChakraProvider>
   );
 }
