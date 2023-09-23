@@ -20,7 +20,7 @@ const AddNew = () => {
           <FormControl mb='5'>
             <Textarea size='md' borderBottom={'1px solid #02456B'} bg='#00000020' placeholder='Details' />
           </FormControl>
-          <Flex justifyContent='space-between' mb='10'>
+          <Flex justifyContent='space-between' mb='10' alignItems='center'>
             <FormControl w='40%'>
               <Select size='md' borderBottom={'1px solid #02456B'} bg='#00000020' placeholder='Status'>
                 <option value='Pending'>Pending</option>

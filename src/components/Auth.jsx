@@ -33,7 +33,7 @@ const Auth = () => { // components: {
       <Text color='#02456B'  fontSize='3xl' fontWeight='700' mb='10'>E-MEMO MANAGER</Text>
       <Text color='#02456B'  fontSize='xl' mb='5'>Welcome back!</Text>
 
-      <Box bg='#f8f5fa' mb='20' p='5' pt='10' w='60%' h='fit-content' boxShadow='0px 8px 8px 0px #00000040'>
+      <Box bg='#f8f5fa' mb='20' p='5' pt='10' w='50%' h='fit-content' boxShadow='0px 8px 8px 0px #00000040'>
         <form onSubmit={handleSubmit}>
           <Box mb='5' boxShadow='0px 4px 4px 0px #00000040'>
             <FormControl isRequired>
